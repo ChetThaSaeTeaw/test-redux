@@ -30,19 +30,13 @@ export default function FormPage() {
 
     const handleSubmitForm = (event) => {
         event.preventDefault();
-        // const form = event.currentTarget;
-        // if (form.checkValidity() === false) {
-        //     event.preventDefault();
-        //     event.stopPropagation();
-        // }
-
         if (userData) {
             dispatch(setContact(userData));
             event.target.reset();
         } else {
             setValidated(true);
         }
-        console.log(userData);
+        // console.log(userData);
     };
 
     return (
@@ -104,8 +98,8 @@ export default function FormPage() {
                         required
                     >
                         <option>Select Gender</option>
-                        <option value="female">Female</option>
                         <option value="male">Male</option>
+                        <option value="female">Female</option>
                         <option value="unknown">Unknown</option>
                     </Form.Select>
                     <Form.Control.Feedback type="invalid">
