@@ -17,10 +17,7 @@ export const selectorContactPersons = createSelector(
 //   [selectContact , selectGender],
 //   (contacts , gender) => {
 //     console.log(contacts , gender);
-//     const selectData = contacts.persons?.filter(person => person.gender == gender)?.map(person => person);
-//     // {!gender ? contacts.person : selectData }
-//     // {!gender ? console.log(contacts.person) : console.log(selectData) }
-//     // console.log(selectData);
+//     const selectData = contacts.persons?.filter(person => person.gender === gender)?.map(person => person);
 //     return selectData;
 //   }
 // );
