@@ -1,0 +1,95 @@
+// icon
+.fixedBoxIcons {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: 12px;
+    background: gold;
+    border-radius: 50%;
+    z-index: 90;
+
+    //  box length
+    .fixedBoxLenght {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 6px;
+        width: 24px;
+        height: 24px;
+        color: #000;
+        background: #f7ff00;
+        font-size: 0.7rem;
+    }
+}
+
+// modal box
+.modalListsBox {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 6px;
+    color: #000;
+    background: #fff;
+    box-shadow: 1px 1px 7px 1px #0009;
+    z-index: 90;
+
+    .modalTitleBox {
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        // close icon
+        .modalIconClose {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            transition: 0.3s all ease-in;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    ul {
+        width: 100%;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+            padding: 12px 0;
+
+            p {
+                padding: 0 5px;
+                font-size: 0.8rem;
+            }
+
+            span {
+                position: relative;
+                bottom: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 8px;
+            }
+        }
+    }
+}
